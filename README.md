@@ -6,6 +6,8 @@
 
 ## 瀏覽
 
+線上瀏覽：[首頁](https://j10419.github.io/phishing-defense-wiki/) · [互動簡報](https://j10419.github.io/phishing-defense-wiki/slides.html) · [LLM Wiki](https://j10419.github.io/phishing-defense-wiki/wiki.html) · [流程與驗證](https://j10419.github.io/phishing-defense-wiki/evidence.html)
+
 | 入口 | 內容 |
 |---|---|
 | [首頁](index.html) | 專案入口與快速導覽 |
