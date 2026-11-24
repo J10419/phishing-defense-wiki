@@ -1,0 +1,110 @@
+[
+  {
+    "id": "S02",
+    "title": "Email or social media hacked? Here’s what to do",
+    "url": "https://consumer.ftc.gov/consumer-alerts/2024/10/email-or-social-media-hacked-heres-what-do",
+    "publisher": "FTC",
+    "publication_date": "2024-10",
+    "retrieved_at": "2026-11-12T09:48:17.172421+00:00",
+    "material_type": "selected_summary_and_short_quote",
+    "evidence_file": "sources/evidence-cards.json",
+    "card_sha256": "990ace3fd0cf967ac59433eb412d6fde9f59538a43daef96bb1bdc519f0ae56a",
+    "locators": [
+      "正文：Here are some things that might tip you off to a problem",
+      "正文：If you can’t log in to your account",
+      "正文：Change your account password",
+      "正文：Update your account recovery information；Check for signs that someone had access to your account",
+      "正文：Secure your account"
+    ]
+  },
+  {
+    "id": "S03",
+    "title": "NIST SP 800-63B-4: Authentication and Authenticator Management",
+    "url": "https://pages.nist.gov/800-63-4/sp800-63b.html",
+    "publisher": "NIST",
+    "publication_date": "2025-07",
+    "retrieved_at": "2026-11-12T09:44:39.681201+00:00",
+    "material_type": "selected_summary_and_short_quote",
+    "evidence_file": "sources/evidence-cards.json",
+    "card_sha256": "723a936001d9927a0b7a282369fced1d76e0eb2960a2d0055e52b3e626223fcd",
+    "locators": [
+      "§3.1.1.2 Password Verifiers；HTML #passwordver",
+      "§3.1.1.2 Password Verifiers；HTML #passwordver",
+      "§3.1.1.2 Password Verifiers；HTML #passwordver",
+      "§3.1.1.2 Password Verifiers；HTML #passwordver",
+      "§3.1.1 Passwords；§3.1.4 Single-Factor OTP；§3.1.5 Multi-Factor OTPs",
+      "§3.2.5 Phishing Resistance；HTML #verifimpers",
+      "§3.2.5 Verifier Name Binding；HTML #verifier-name-binding",
+      "Appendix B Implementation Requirements；User Verified (UV)"
+    ]
+  },
+  {
+    "id": "S05",
+    "title": "Implementing Phishing-Resistant MFA",
+    "url": "https://www.cisa.gov/sites/default/files/publications/fact-sheet-implementing-phishing-resistant-mfa-508c.pdf",
+    "publisher": "CISA",
+    "publication_date": "2022-10",
+    "retrieved_at": "2026-11-12T09:44:40.905479+00:00",
+    "material_type": "selected_summary_and_short_quote",
+    "evidence_file": "sources/evidence-cards.json",
+    "card_sha256": "2646375171707f0e14d606ce56d3c8c3454c187e3abd273035a1d1b2b99dc773",
+    "locators": [
+      "PDF p.1 OVERVIEW",
+      "PDF p.1 OVERVIEW / CYBER THREATS TO MFA",
+      "PDF p.1 CYBER THREATS TO MFA / Phishing",
+      "PDF p.1 Push bombing；p.2 Table 1",
+      "PDF pp.2–3 Table 1: MFA Forms, Strongest to Weakest",
+      "PDF p.3 FIDO/WebAuthn Authentication"
+    ]
+  },
+  {
+    "id": "S07",
+    "title": "Phishing, Technique T1566",
+    "url": "https://attack.mitre.org/techniques/T1566/",
+    "publisher": "MITRE",
+    "publication_date": "2026-09-18",
+    "retrieved_at": "2026-11-12T09:44:42.613589+00:00",
+    "material_type": "selected_summary_and_short_quote",
+    "evidence_file": "sources/evidence-cards.json",
+    "card_sha256": "fbdb933f99d6c08913d4993f3a3feb76cb8ea36461b49552fbd194702df6fc15",
+    "locators": [
+      "T1566 overview；保存引文：All forms of phishing are electronically delivered social engineering."
+    ]
+  },
+  {
+    "id": "S08",
+    "title": "Phishing: Small Business Cybersecurity",
+    "url": "https://www.nist.gov/itl/smallbusinesscyber/guidance-topic/phishing",
+    "publisher": "NIST",
+    "publication_date": null,
+    "retrieved_at": "2026-11-12T09:45:46.824352+00:00",
+    "material_type": "selected_summary_and_short_quote",
+    "evidence_file": "sources/evidence-cards.json",
+    "card_sha256": "894f72c7c45f8cb25b560894091d9ff4f956d83de5265e5eb7c07f337c8afe5a",
+    "locators": [
+      "What is Phishing?；How Can I Protect My Business from Phishing?",
+      "How to Spot a Phish",
+      "How to Spot a Phish；How Can I Protect My Business from Phishing?",
+      "What should I do if I think I’ve been a victim of a phishing attack?",
+      "How Can I Protect My Business from Phishing?"
+    ]
+  },
+  {
+    "id": "S11",
+    "title": "Phishing and Spoofing Tip Sheet",
+    "url": "https://www.cisa.gov/sites/default/files/publications/phishing_and_spoofing_tip_sheet_2022_092022.pdf",
+    "publisher": "CISA",
+    "publication_date": "2022-09",
+    "retrieved_at": "2026-11-12T09:45:50.061200+00:00",
+    "material_type": "selected_summary_and_short_quote",
+    "evidence_file": "sources/evidence-cards.json",
+    "card_sha256": "7ea2cd542f3dec7d5974a2838188b1559d8f69a5ba030cfaa4b07c7c8c27556a",
+    "locators": [
+      "PDF p.1 PHISHING / HOW CYBERCRIMINALS LURE YOU IN",
+      "PDF pp.1–2 HOW CYBERCRIMINALS LURE YOU IN",
+      "PDF p.1 Check hyperlinks",
+      "PDF p.2 KNOW YOUR CYBER BASICS / Shake up your password protocol；Use password managers",
+      "PDF p.2 KNOW YOUR CYBER BASICS"
+    ]
+  }
+]

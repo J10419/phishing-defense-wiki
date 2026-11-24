@@ -1,0 +1,444 @@
+[
+  {
+    "id": "W01",
+    "title": "釣魚是什麼：利用信任誘導行動",
+    "summary": "釣魚用看似可信的訊息誘使人點擊、下載或交出資料；先看它要你做什麼。",
+    "body": [
+      {
+        "heading": "基本概念",
+        "text": "MITRE將釣魚列為透過電子方式傳遞的社交工程。白話來說，就是利用人對寄件者或情境的信任，引導人做出對攻擊者有利的動作。它不只是垃圾信，也可能看起來像正式通知。",
+        "source_ids": [
+          "S07",
+          "S08"
+        ],
+        "locator": "S07 T1566 overview短引文；S08 What is Phishing?；末句為編纂摘要"
+      },
+      {
+        "heading": "要觀察的動作",
+        "text": "NIST列出的危險動作包含開啟有害連結、下載惡意軟體或提交敏感資訊。CISA舉出帳號異常、驗證資料與退款等誘因。因此閱讀訊息時，要把『它是誰』與『它要我做什麼』一起判斷。",
+        "source_ids": [
+          "S08",
+          "S11"
+        ],
+        "locator": "S08 What is Phishing? / How to Spot a Phish；S11 PDF p.1；末句為綜合判讀"
+      },
+      {
+        "heading": "不只發生在電子郵件",
+        "text": "NIST提醒，類似誘導也可能透過簡訊、電話或社群訊息出現。電子郵件是本專案的主要情境；遇到要求採取行動的訊息，先停下來確認來源與目的，再決定是否進一步操作。",
+        "source_ids": [
+          "S08"
+        ],
+        "locator": "S08 How Can I Protect My Business from Phishing?；情境重點為編纂摘要"
+      }
+    ],
+    "related": [
+      "W02",
+      "W03",
+      "W09"
+    ],
+    "source_ids": [
+      "S07",
+      "S08",
+      "S11"
+    ]
+  },
+  {
+    "id": "W02",
+    "title": "可疑訊號：催促、冒充與索取資訊",
+    "summary": "警訊用來提醒查證；一封信看起來正式，並不能取代確認。",
+    "body": [
+      {
+        "heading": "四個需要停下來的訊號",
+        "text": "先找四類訊號：急著要你處理、來源地址可疑、要求點連結或下載附件、要求提供敏感資料。這些都是NIST列出的觀察重點。它們提示你需要查證，不能單靠其中一項就斷言每封信一定有問題。",
+        "source_ids": [
+          "S08"
+        ],
+        "locator": "S08 How to Spot a Phish；最後一句為證據使用界線"
+      },
+      {
+        "heading": "細節正確也要查證",
+        "text": "CISA提醒，訊息即使有看似正確的細節，也不應因此直接回覆或點擊。帳號將停用、需要更新資料、等待退款，都可能是誘因。先獨立聯絡對方，才能避免完全被訊息安排的步驟牽著走。",
+        "source_ids": [
+          "S11",
+          "S08"
+        ],
+        "locator": "S11 PDF pp.1–2 HOW CYBERCRIMINALS LURE YOU IN；S08 How to Spot a Phish"
+      },
+      {
+        "heading": "訊息判讀順序",
+        "text": "綜合判讀：依序確認『要求做什麼、為何這麼急、如何另外確認』。這個順序把注意力放在行動與查證，而不是只猜寄件者是否可信。若仍不確定，就使用W03的獨立查證流程。",
+        "source_ids": [
+          "S08",
+          "S11"
+        ],
+        "locator": "S08 How to Spot a Phish；S11 PDF pp.1–2；本節為綜合判讀"
+      }
+    ],
+    "related": [
+      "W01",
+      "W03",
+      "W09"
+    ],
+    "source_ids": [
+      "S08",
+      "S11"
+    ]
+  },
+  {
+    "id": "W03",
+    "title": "獨立查證、HTTPS與通報",
+    "summary": "離開可疑訊息提供的路徑，從已知官方管道確認；HTTPS只說明加密這一層。",
+    "body": [
+      {
+        "heading": "從你原本知道的管道查",
+        "text": "不要直接用可疑信內的連結或電話確認真假。NIST建議使用已知聯絡方式或官方網站資料；CISA建議直接登入原本知道的帳號入口確認。企業IT通知也應從既有正式入口查詢，或另行聯絡已知窗口。",
+        "source_ids": [
+          "S08",
+          "S11"
+        ],
+        "locator": "S08 How to Spot a Phish；S11 PDF p.2 Be alert for suspicious emails；企業情境為情境改寫"
+      },
+      {
+        "heading": "HTTPS不是身分保證",
+        "text": "CISA的HTTPS說明是『傳輸有加密』。綜合判讀：加密這件事不能代替確認服務身分，看到HTTPS仍要獨立查證。不要把『資料傳送的方式』和『要求你交資料的人是否可信』當成同一個問題。",
+        "source_ids": [
+          "S11",
+          "S08"
+        ],
+        "locator": "S11 PDF p.1 Check hyperlinks；S08 How to Spot a Phish；身分判斷為綜合判讀"
+      },
+      {
+        "heading": "通報後再處理訊息",
+        "text": "NIST建議組織建立辨識與通報機制，也提醒不要回覆或點退訂連結。組織帳號應依既有事件流程通報，再按該流程處理訊息。實際窗口須向所屬組織確認；美國來源中的通報入口並非其他地區的通用規定。",
+        "source_ids": [
+          "S08",
+          "S11"
+        ],
+        "locator": "S08 How Can I Protect My Business from Phishing? / What should I do if...；S11 PDF p.2 HOW TO REPORT；企業轉用與範圍限制"
+      }
+    ],
+    "related": [
+      "W02",
+      "W07",
+      "W10"
+    ],
+    "source_ids": [
+      "S08",
+      "S11"
+    ]
+  },
+  {
+    "id": "W04",
+    "title": "密碼：長、獨特並妥善管理",
+    "summary": "每個帳號使用不同的長密碼，讓密碼管理器協助；不要省略標準中的適用條件。",
+    "body": [
+      {
+        "heading": "每個帳號都不同",
+        "text": "CISA建議使用長而獨特的密碼，並以密碼管理器產生及保存各帳號不同的密碼。FTC也建議受害後改為獨特強密碼。重點不是記住一套變形規則，而是避免同一組密碼被拿去登入其他帳號。",
+        "source_ids": [
+          "S11",
+          "S02",
+          "S03"
+        ],
+        "locator": "S11 PDF p.2 KNOW YOUR CYBER BASICS；S02 Change your account password；S03 §3.1.1.2及密碼重用風險說明"
+      },
+      {
+        "heading": "15與8有不同條件",
+        "text": "NIST 2025要求服務端：單以密碼驗證時至少15字元；密碼只作為多因素驗證的一部分時，可較短但至少8字元。這是服務實作的條件，不代表8字元一定安全。實際使用時應在服務允許範圍內使用長而獨特的密碼。",
+        "source_ids": [
+          "S03",
+          "S11"
+        ],
+        "locator": "S03 §3.1.1.2 Password Verifiers；S11 PDF p.2 Shake up your password protocol"
+      },
+      {
+        "heading": "何時需要換密碼",
+        "text": "NIST規定驗證服務不得要求使用者任意定期換密碼；有證據顯示密碼等驗證器遭入侵時則必須要求更換。FTC對疑似帳號遭入侵者也建議改密碼。『不強制定期更換』不等於『懷疑外洩也不必處理』。",
+        "source_ids": [
+          "S03",
+          "S02"
+        ],
+        "locator": "S03 §3.1.1.2 Password Verifiers；S02 Change your account password"
+      }
+    ],
+    "related": [
+      "W05",
+      "W08",
+      "W10"
+    ],
+    "source_ids": [
+      "S03",
+      "S11",
+      "S02"
+    ]
+  },
+  {
+    "id": "W05",
+    "title": "MFA：多一層驗證，也要選對方法",
+    "summary": "多因素驗證增加帳號保護，但一次性碼與推播仍可能被騙取或濫用。",
+    "body": [
+      {
+        "heading": "不同因素的組合",
+        "text": "多因素驗證（MFA）結合不同類型的證明，例如你知道的密碼、你擁有的裝置，或你的生物特徵。CISA說明，這讓只拿到密碼的人更難登入。它增加保護，但不同驗證方式的抗攻擊能力並不相同。",
+        "source_ids": [
+          "S05",
+          "S03"
+        ],
+        "locator": "S05 PDF p.1 OVERVIEW；S03 Introduction / Authentication Assurance Levels"
+      },
+      {
+        "heading": "六位碼仍可能被釣魚",
+        "text": "一次性驗證碼（OTP）會變動，不代表它能辨識假網站。CISA的例子中，假登入頁會同時索取密碼與手機驗證器的六位碼；NIST也明確指出OTP不具抗釣魚性。因此不能因為有第二道輸入框就放心登入。",
+        "source_ids": [
+          "S05",
+          "S03"
+        ],
+        "locator": "S05 PDF p.1 CYBER THREATS TO MFA；S03 §3.1.4及§3.1.5"
+      },
+      {
+        "heading": "不要被推播催著接受",
+        "text": "CISA描述推播疲勞：攻擊者反覆發送登入提示，直到使用者按下接受。編纂推論：不是自己發起的驗證，不要為了消除通知而批准；先查證。數字配對能改善這類風險，但仍不等於抗釣魚驗證。",
+        "source_ids": [
+          "S05"
+        ],
+        "locator": "S05 PDF p.1 Push bombing；p.2 Table 1；不批准非本人請求為編纂推論"
+      }
+    ],
+    "related": [
+      "W04",
+      "W06",
+      "W09"
+    ],
+    "source_ids": [
+      "S05",
+      "S03"
+    ]
+  },
+  {
+    "id": "W06",
+    "title": "抗釣魚驗證：FIDO與WebAuthn",
+    "summary": "讓驗證方式辨識正確服務，是抗釣魚驗證與手動輸入驗證碼的重要差異。",
+    "body": [
+      {
+        "heading": "把驗證綁到正確服務",
+        "text": "NIST定義抗釣魚為：驗證協定避免把有效秘密或輸出交給冒牌驗證者，且不依賴使用者一直保持警覺。WebAuthn是其中一例；它可依已驗證的服務網域選擇對應秘密，讓驗證與正確服務綁定。",
+        "source_ids": [
+          "S03"
+        ],
+        "locator": "S03 §3.2.5 Phishing Resistance / Verifier Name Binding"
+      },
+      {
+        "heading": "常見裝置形式",
+        "text": "CISA說明，FIDO/WebAuthn驗證器可以是USB或NFC安全金鑰，也可以內建於電腦或手機，並結合PIN或生物特徵。這不只是把同一個驗證碼換個地方顯示，而是採用不同的驗證機制。",
+        "source_ids": [
+          "S05",
+          "S03"
+        ],
+        "locator": "S05 PDF p.3 FIDO/WebAuthn Authentication；S03 §3.2.5；末句為編纂摘要"
+      },
+      {
+        "heading": "選擇與限制",
+        "text": "服務提供抗釣魚MFA時，可優先採用；尚未支援時，仍先啟用可用MFA。NIST也提醒，是否算多因素要看實際使用者驗證設定，不能只看WebAuthn名稱。抗釣魚是特定能力，不是帳號永不遭入侵的保證。",
+        "source_ids": [
+          "S05",
+          "S03"
+        ],
+        "locator": "S05 PDF pp.1–3；S03 Appendix B User Verified (UV)及§3.2.5定義；末句為範圍界線"
+      }
+    ],
+    "related": [
+      "W05",
+      "W08",
+      "W10"
+    ],
+    "source_ids": [
+      "S03",
+      "S05"
+    ]
+  },
+  {
+    "id": "W07",
+    "title": "誤點之後：先釐清做過什麼",
+    "summary": "依已做的動作分流處理；不憑『點過』或『沒輸入』就判定一定中毒或一定安全。",
+    "body": [
+      {
+        "heading": "尚未交出資料",
+        "text": "綜合判讀：先釐清自己只是收到訊息、已點連結，還是已輸入資料或下載檔案。停止依可疑訊息繼續操作，改走已知官方入口查證與通報。這份資料不足以單憑一次點擊判定裝置已中毒或完全安全。",
+        "source_ids": [
+          "S08",
+          "S11"
+        ],
+        "locator": "S08 How to Spot a Phish / How Can I Protect My Business from Phishing?；S11 PDF pp.1–2；本節為處理分流與證據界線"
+      },
+      {
+        "heading": "已輸入密碼或驗證資訊",
+        "text": "若已把帳號資料交到可疑頁面，應按疑似外洩處理：從正式入口更換受影響密碼；仍能登入時，登出其他裝置並檢查帳號設定。若其他帳號使用相同密碼，也更換成獨特密碼。不能登入則走服務商復原流程。",
+        "source_ids": [
+          "S08",
+          "S02"
+        ],
+        "locator": "S08 What should I do if I think I’ve been a victim...；S02 Change your account password / If you can’t log in；分流為綜合判讀"
+      },
+      {
+        "heading": "已下載或開啟可疑內容",
+        "text": "NIST與CISA建議維護防護軟體並遵循組織事件流程。綜合判讀：若已下載或開啟可疑內容，不再嘗試操作它，依企業IT管道請求裝置檢查；不要只改密碼就認定處理完成。這裡不提供未經檢查的中毒診斷。",
+        "source_ids": [
+          "S08",
+          "S11"
+        ],
+        "locator": "S08 How Can I Protect My Business... / What should I do if...；S11 PDF p.2 Install and update antivirus software；企業處理為編纂推論"
+      }
+    ],
+    "related": [
+      "W03",
+      "W08",
+      "W09"
+    ],
+    "source_ids": [
+      "S08",
+      "S11",
+      "S02"
+    ]
+  },
+  {
+    "id": "W08",
+    "title": "帳號復原與後續檢查",
+    "summary": "取回登入只是第一步；還要確認其他裝置、復原資訊與自動轉寄設定。",
+    "body": [
+      {
+        "heading": "確認是否仍可登入",
+        "text": "FTC列出可能異常：不是本人操作的密碼或聯絡方式變更、陌生登入通知，或突然無法登入。若仍可登入，從正式入口改密碼並登出所有裝置；若無法登入，依服務商的帳號復原指示處理。",
+        "source_ids": [
+          "S02",
+          "S08"
+        ],
+        "locator": "S02 Here are some things... / If you can’t log in / Change your account password；S08獨立查證原則"
+      },
+      {
+        "heading": "查看留下的設定",
+        "text": "檢查復原信箱與電話是否仍正確，也查看自己沒有建立的郵件自動轉寄規則、未發送的訊息與陌生社群連結。這些是FTC明列的帳號檢查項目；只換密碼而不檢查設定，會漏掉這部分工作。",
+        "source_ids": [
+          "S02"
+        ],
+        "locator": "S02 Update your account recovery information；Check for signs that someone had access to your account"
+      },
+      {
+        "heading": "降低再次受害的機會",
+        "text": "啟用MFA，並依服務支援情況改用抗釣魚方式；也要更換其他帳號重用的外洩密碼。組織帳號則按事件流程通知適當人員。這些步驟是來源建議的綜合整理，完成後仍應留意後續異常通知。",
+        "source_ids": [
+          "S02",
+          "S08",
+          "S05"
+        ],
+        "locator": "S02 Secure your account及異常通知；S08 What should I do if...；S05 PDF pp.1–3；末句為編纂推論"
+      }
+    ],
+    "related": [
+      "W04",
+      "W06",
+      "W07"
+    ],
+    "source_ids": [
+      "S02",
+      "S08",
+      "S05"
+    ]
+  },
+  {
+    "id": "W09",
+    "title": "企業IT通知與情境判讀",
+    "summary": "以虛構IT通知檢視獨立查證與一次性驗證碼的限制。",
+    "body": [
+      {
+        "heading": "虛構情境：帳號即將停用",
+        "text": "【虛構情境，非真實收到的郵件】你收到一封自稱企業IT支援中心的通知：『請在30分鐘內完成驗證，否則帳號停用；登入後再填手機驗證碼。』它結合緊迫期限、冒充與索取驗證資訊；本例不含可操作的釣魚網址。",
+        "source_ids": [
+          "S08",
+          "S11",
+          "S05"
+        ],
+        "locator": "S08 How to Spot a Phish；S11 PDF p.1情境；S05 PDF p.1 Phishing；本情境為自行設計"
+      },
+      {
+        "heading": "可採取的第一步",
+        "text": "【情境判讀】A：依信件連結登入。B：回覆詢問真假。C：自行開啟已知企業入口或找正式IT窗口。建議選C，因為它符合獨立查證原則。可疑特徵提醒你查證，而不是要求你先證明整封信百分之百是假。",
+        "source_ids": [
+          "S08",
+          "S11"
+        ],
+        "locator": "S08 How to Spot a Phish；S11 PDF pp.1–2獨立查證；情境與選項為自行設計"
+      },
+      {
+        "heading": "六位碼的風險",
+        "text": "【情境判讀】有六位一次性驗證碼，是否就不怕假網站？不是。CISA描述假網站可同時索取密碼與驗證碼；增加一道驗證不能取代獨立查證。這是虛構案例的風險分析，沒有寄送郵件或操作任何人的帳號。",
+        "source_ids": [
+          "S05",
+          "S08"
+        ],
+        "locator": "S05 PDF p.1 CYBER THREATS TO MFA；S08 How to Spot a Phish；情境為自行設計"
+      }
+    ],
+    "related": [
+      "W01",
+      "W03",
+      "W05",
+      "W07"
+    ],
+    "source_ids": [
+      "S08",
+      "S11",
+      "S05"
+    ]
+  },
+  {
+    "id": "W10",
+    "title": "來源差異與適用界線",
+    "summary": "保留年代、讀者與適用條件，避免把簡化建議講成安全保證。",
+    "body": [
+      {
+        "heading": "密碼長度並非同一個問題",
+        "text": "FTC 2024消費者文章建議12至15字元；NIST 2025對驗證服務的規範則分成單因素至少15、MFA中的密碼至少8。它們的讀者與條件不同。本Wiki保留差異，實際防護重點仍是長、獨特並使用密碼管理器。",
+        "source_ids": [
+          "S02",
+          "S03",
+          "S11"
+        ],
+        "locator": "S02 Change your account password；S03 §3.1.1.2；S11 PDF p.2"
+      },
+      {
+        "heading": "避免兩種過度簡化",
+        "text": "CISA概覽資料介紹HTTPS與MFA，不能因此改寫成『有HTTPS就可信』或『有MFA就不會被釣魚』。HTTPS段落只說明加密；另一份CISA專門文件及NIST則明列OTP與部分MFA仍會遭釣魚的限制。",
+        "source_ids": [
+          "S11",
+          "S05",
+          "S03"
+        ],
+        "locator": "S11 PDF p.1 Check hyperlinks / p.2 MFA；S05 PDF pp.1–3；S03 §3.1.4、§3.1.5及§3.2.5"
+      },
+      {
+        "heading": "資料適用與未知部分",
+        "text": "FTC與CISA文件含美國脈絡，組織帳號仍要確認實際通報與復原方式。NIST標準面向驗證服務，不能直接宣稱所有網站都符合。本Wiki提供可追溯的風險判讀與防護建議，不用未取得的組織規則或未量測的成效補齊空白。",
+        "source_ids": [
+          "S02",
+          "S03",
+          "S05",
+          "S11"
+        ],
+        "locator": "S02服務商復原指引；S03 Introduction；S05 p.1 intended audience；S11 p.2 HOW TO REPORT；本節為適用範圍說明"
+      }
+    ],
+    "related": [
+      "W03",
+      "W04",
+      "W05",
+      "W06",
+      "W08"
+    ],
+    "source_ids": [
+      "S03",
+      "S05",
+      "S11",
+      "S02"
+    ]
+  }
+]

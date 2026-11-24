@@ -1,0 +1,27 @@
+{
+  "compiled_content_at": "2026-11-24T09:00:03+00:00",
+  "authoring": "Codex LLM agent",
+  "method": "LLM依可定位的證據摘要編纂並整合知識條目；情境改寫明示虛構。",
+  "source_retrieval_date": "2026-11-12",
+  "evidence_scope": "精選摘要與短引文；未發布完整原文。",
+  "content": [
+    {
+      "path": "sources/evidence-cards.json",
+      "sha256": "b27339be5444b7268457973cb95f28c9f6f033fb9e153ea642021b27b84253b0"
+    },
+    {
+      "path": "sources/manifest.json",
+      "sha256": "e8a62c278a280841fa8aa8ece80d97751383853ee74d4d9d339ab75fa79ad832"
+    },
+    {
+      "path": "wiki/pages.json",
+      "sha256": "d16a84f7b66218ad23d45b08092a59b3e93c23d537121729b5728bf2a72087e8"
+    },
+    {
+      "path": "slides/slides.json",
+      "sha256": "d730dff17a7ad8588196cf53cb38c5a5f5bab8cf58a22fc733a3ae6cb3d47c36"
+    }
+  ],
+  "runtime_boundary": "ingest、compile、query及rebuild均為本機儲存、檢索或重播；不自行呼叫模型，也不代表來源重新取得。",
+  "updated_at": "2026-11-24T09:03:55+00:00"
+}

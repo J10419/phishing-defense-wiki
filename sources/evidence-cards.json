@@ -1,0 +1,231 @@
+[
+  {
+    "id": "S02",
+    "title": "Email or social media hacked? Here’s what to do",
+    "summary": "以異常登入、帳號資訊被改或無法登入辨識可能遭入侵；能登入時改密碼並登出其他裝置，檢查復原資訊與郵件轉寄，不能登入則走服務商復原流程。",
+    "claims": [
+      {
+        "id": "S02-C01",
+        "text": "不是本人操作的密碼或聯絡資訊變更、陌生登入通知、無法登入，都是可能遭入侵的警訊。",
+        "locator": "正文：Here are some things that might tip you off to a problem"
+      },
+      {
+        "id": "S02-C02",
+        "text": "若無法登入帳號，應依服務提供者的帳號復原指示處理。",
+        "locator": "正文：If you can’t log in to your account"
+      },
+      {
+        "id": "S02-C03",
+        "text": "若仍能登入，將密碼改為獨特且難猜的密碼，並使用登出所有裝置的功能。",
+        "locator": "正文：Change your account password"
+      },
+      {
+        "id": "S02-C04",
+        "text": "檢查帳號復原資訊中的電子郵件與電話是否正確；找出自己未設定的自動轉寄規則及未發送的貼文或訊息。",
+        "locator": "正文：Update your account recovery information；Check for signs that someone had access to your account"
+      },
+      {
+        "id": "S02-C05",
+        "text": "若服務提供雙因素驗證，啟用它以增加保護。",
+        "locator": "正文：Secure your account"
+      }
+    ],
+    "limitations": [
+      "此卡依2026-11-12取得的官方FTC搜尋擷取文字編纂，僅發布精選摘要，不包含完整原始HTML。",
+      "原文密碼長度建議為12–15字元，是2024消費者指引；與後續標準比較時須保留不同對象及條件。",
+      "IdentityTheft.gov是美國入口；組織事件須使用所屬單位的正式流程。",
+      "雙因素驗證的概覽說明不可推論成所有MFA均抗釣魚。"
+    ],
+    "material_type": "精選編纂摘要與短引文；非完整原文"
+  },
+  {
+    "id": "S03",
+    "title": "NIST SP 800-63B-4: Authentication and Authenticator Management",
+    "summary": "定義驗證與驗證器管理要求，包含密碼長度、異常時更換密碼、密碼管理器，以及OTP與抗釣魚驗證的差異。WebAuthn可透過綁定驗證者網域提供抗釣魚能力。",
+    "claims": [
+      {
+        "id": "S03-C01",
+        "text": "服務端若以密碼作為單一驗證因素，至少要求15字元；僅作為多因素驗證之一的密碼可較短，但不得少於8字元。",
+        "locator": "§3.1.1.2 Password Verifiers；HTML #passwordver"
+      },
+      {
+        "id": "S03-C02",
+        "text": "驗證服務不應強制定期更換密碼；有證據顯示驗證器遭入侵時，必須要求更換。",
+        "locator": "§3.1.1.2 Password Verifiers；HTML #passwordver"
+      },
+      {
+        "id": "S03-C03",
+        "text": "驗證服務不得強制其他密碼字元組成規則，例如一定要混合不同字元類型；應允許至少64字元的最大長度。",
+        "locator": "§3.1.1.2 Password Verifiers；HTML #passwordver"
+      },
+      {
+        "id": "S03-C04",
+        "text": "驗證服務必須允許密碼管理器與自動填入；密碼管理器，尤其具產生器者，有助於使用者選擇較強密碼。",
+        "locator": "§3.1.1.2 Password Verifiers；HTML #passwordver"
+      },
+      {
+        "id": "S03-C05",
+        "text": "一般密碼、單因素OTP與多因素OTP都不屬於抗釣魚驗證；一次性不等於能抵抗假網站騙取輸入。",
+        "locator": "§3.1.1 Passwords；§3.1.4 Single-Factor OTP；§3.1.5 Multi-Factor OTPs"
+      },
+      {
+        "id": "S03-C06",
+        "text": "抗釣魚能力指驗證協定能避免把有效驗證秘密或輸出交給冒牌驗證者，而且不依賴使用者時時警覺。",
+        "locator": "§3.2.5 Phishing Resistance；HTML #verifimpers"
+      },
+      {
+        "id": "S03-C07",
+        "text": "WebAuthn可依驗證者已驗證的網域名稱選用驗證秘密，透過驗證者名稱綁定提供抗釣魚能力。",
+        "locator": "§3.2.5 Verifier Name Binding；HTML #verifier-name-binding"
+      },
+      {
+        "id": "S03-C08",
+        "text": "是否把WebAuthn驗證器視為多因素，需檢查使用者是否已在本機通過驗證；不能只憑使用WebAuthn就認定具多因素。",
+        "locator": "Appendix B Implementation Requirements；User Verified (UV)"
+      }
+    ],
+    "limitations": [
+      "這些SHALL/SHOULD主要規範驗證服務與其實作；不等同所有一般網站一律已採用，也不是一般使用者的普遍法律義務。",
+      "15/8的條件不可省略，也不可解讀成『8字元一定安全』。",
+      "抗釣魚不是防止所有帳號入侵；裝置或復原流程仍需保護。",
+      "此標準涵蓋範圍廣，本專案僅選取有明確定位的相關主張。"
+    ],
+    "material_type": "精選編纂摘要與短引文；非完整原文"
+  },
+  {
+    "id": "S05",
+    "title": "Implementing Phishing-Resistant MFA",
+    "summary": "說明MFA增加驗證因素，但不同方法保護程度不同。輸入驗證碼與一般推播仍有弱點，CISA建議遷移至FIDO/WebAuthn等抗釣魚MFA。",
+    "claims": [
+      {
+        "id": "S05-C01",
+        "text": "MFA要求兩種以上不同驗證方式，例如知道的秘密、擁有的裝置、個人生物特徵，以增加帳號保護。",
+        "locator": "PDF p.1 OVERVIEW"
+      },
+      {
+        "id": "S05-C02",
+        "text": "MFA方法並非同樣安全；部分會受到釣魚、推播疲勞、SS7或SIM交換攻擊影響。",
+        "locator": "PDF p.1 OVERVIEW / CYBER THREATS TO MFA"
+      },
+      {
+        "id": "S05-C03",
+        "text": "假登入網站可能同時騙取帳號密碼與驗證器App的一次性驗證碼。",
+        "locator": "PDF p.1 CYBER THREATS TO MFA / Phishing"
+      },
+      {
+        "id": "S05-C04",
+        "text": "沒有數字配對的推播可能被反覆提示誘使使用者按接受；數字配對可降低此類風險，但不等於抗釣魚。",
+        "locator": "PDF p.1 Push bombing；p.2 Table 1"
+      },
+      {
+        "id": "S05-C05",
+        "text": "FIDO/WebAuthn與PKI型MFA屬抗釣魚方案；App或硬體OTP、數字配對仍可能遭釣魚，簡訊或語音碼應作最後或過渡選項。",
+        "locator": "PDF pp.2–3 Table 1: MFA Forms, Strongest to Weakest"
+      },
+      {
+        "id": "S05-C06",
+        "text": "WebAuthn驗證器可為USB/NFC實體裝置，也可內建於電腦或手機，並能結合PIN或生物特徵。",
+        "locator": "PDF p.3 FIDO/WebAuthn Authentication"
+      }
+    ],
+    "limitations": [
+      "面向IT管理者與網路防守者的2022文件；服務實際支援方式需看官方帳號設定。",
+      "CISA建議任何MFA優於沒有，但不應因此把OTP、簡訊與FIDO視為等價。",
+      "『抗釣魚』不代表裝置、工作階段或復原管道完全不會遭攻擊。"
+    ],
+    "material_type": "精選編纂摘要與短引文；非完整原文"
+  },
+  {
+    "id": "S07",
+    "title": "MITRE ATT&CK T1566 — Phishing",
+    "summary": "以MITRE T1566的短引文界定釣魚屬透過電子方式傳遞的社交工程。",
+    "claims": [
+      {
+        "id": "S07-C01",
+        "text": "釣魚的各種形式都屬透過電子方式傳遞的社交工程。",
+        "locator": "T1566 overview；保存引文：All forms of phishing are electronically delivered social engineering."
+      }
+    ],
+    "limitations": [
+      "本卡只提供一個定義的精選摘要與短引文，不支持子技術列表、攻擊案例、統計或防禦細節。",
+      "完整文獻請由來源URL查閱；本儲存庫不包含完整原始網頁。"
+    ],
+    "material_type": "精選編纂摘要與短引文；非完整原文"
+  },
+  {
+    "id": "S08",
+    "title": "Phishing — NIST Small Business Cybersecurity",
+    "summary": "釣魚常冒充信任對象，引導點連結、下載或交出資訊。遇緊急要求應暫停，以已知聯絡方式查證；若受害，改受影響密碼並通知適當人員。",
+    "claims": [
+      {
+        "id": "S08-C01",
+        "text": "釣魚利用看似可信的訊息誘使人開啟有害連結、下載惡意軟體或提交敏感資訊，且不限於電子郵件。",
+        "locator": "What is Phishing?；How Can I Protect My Business from Phishing?"
+      },
+      {
+        "id": "S08-C02",
+        "text": "緊急催促、可疑來源地址、要求下載或點擊、索取敏感資料，都是需要停下來查證的訊號。",
+        "locator": "How to Spot a Phish"
+      },
+      {
+        "id": "S08-C03",
+        "text": "查證應使用已知聯絡方式或官方網站資料，不能依賴可疑訊息內提供的聯絡方式；不要回覆或點退訂連結。",
+        "locator": "How to Spot a Phish；How Can I Protect My Business from Phishing?"
+      },
+      {
+        "id": "S08-C04",
+        "text": "受害後應儘速更換受影響帳號的密碼；若其他帳號重複使用同一密碼，也要改成獨特強密碼，並遵循組織事件通報流程。",
+        "locator": "What should I do if I think I’ve been a victim of a phishing attack?"
+      },
+      {
+        "id": "S08-C05",
+        "text": "保護措施包含建立辨識與通報機制、維護防毒軟體、郵件過濾與驗證機制，以及啟用MFA並朝抗釣魚驗證提升。",
+        "locator": "How Can I Protect My Business from Phishing?"
+      }
+    ],
+    "limitations": [
+      "小型企業指引中的美國金融與法規通報，不可直接視為其他地區或組織的規則。",
+      "警訊是提醒查證的線索，不能以單一線索直接認定真偽。",
+      "本卡僅選取與釣魚防護相關且可定位的內容。"
+    ],
+    "material_type": "精選編纂摘要與短引文；非完整原文"
+  },
+  {
+    "id": "S11",
+    "title": "Phishing — CISA Tip Sheet (2022)",
+    "summary": "以帳號異常、退款等誘因展示釣魚訊息；建議從官方管道查證、避免點擊可疑連結，並使用獨特長密碼、密碼管理器與MFA。",
+    "claims": [
+      {
+        "id": "S11-C01",
+        "text": "釣魚可冒充金融機構、電商、政府或熟人，以帳號異常、驗證與退款等說詞要求提供資訊。",
+        "locator": "PDF p.1 PHISHING / HOW CYBERCRIMINALS LURE YOU IN"
+      },
+      {
+        "id": "S11-C02",
+        "text": "可疑訊息即使細節看似正確，也不應直接回覆或點擊；應另找組織正式管道驗證。",
+        "locator": "PDF pp.1–2 HOW CYBERCRIMINALS LURE YOU IN"
+      },
+      {
+        "id": "S11-C03",
+        "text": "HTTPS中的s代表連線啟用加密以保護傳輸資料；這個來源沒有說HTTPS足以證明網站身分可信。",
+        "locator": "PDF p.1 Check hyperlinks"
+      },
+      {
+        "id": "S11-C04",
+        "text": "使用長而獨特的密碼；密碼管理器可產生並記住各帳號不同的密碼。",
+        "locator": "PDF p.2 KNOW YOUR CYBER BASICS / Shake up your password protocol；Use password managers"
+      },
+      {
+        "id": "S11-C05",
+        "text": "在電子郵件、銀行、社群等提供MFA的服務上啟用MFA，並維護更新防護軟體。",
+        "locator": "PDF p.2 KNOW YOUR CYBER BASICS"
+      }
+    ],
+    "limitations": [
+      "2022概覽材料的部分敘述較簡化；不把啟用MFA改寫成無法被冒用的保證。",
+      "HTTPS段落僅支持連線加密，不等於完整的服務身分判斷。",
+      "依此改寫的郵件案例須標示虛構，不可冒稱實際發生的事件。"
+    ],
+    "material_type": "精選編纂摘要與短引文；非完整原文"
+  }
+]
